@@ -1,0 +1,5 @@
+It should be implemented using only HTML, CSS, JS.
+What the app should do:
+Users can enter a description of something they need to remember or accomplish and immediately see it appear in their task list.
+All added tasks show up in an ordered list, with clear visual separation between items.
+Each task has a control (e.g. a button or icon) that lets the user delete it from the list.
