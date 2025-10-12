@@ -1,0 +1,93 @@
+body {
+  background: linear-gradient(135deg, #6c6dd2, #7159b6);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.calculator {
+  background: #7b7ad3;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  display: grid;
+  grid-template-columns: repeat(4, 70px);
+  grid-template-rows: repeat(7, 65px);
+  grid-gap: 10px;
+}
+
+.display {
+  grid-column: span 4;
+  grid-row: span 2;
+  margin: 10px;
+  background: #6361a8;
+  border-radius: 10px;
+  color: white;
+  font-size: 2.5rem;
+  font-weight: bold;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 15px;
+  overflow-x: auto;
+}
+
+button {
+  height: 60px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+  background: rgba(255, 255, 255, 0.1);
+  transition: 0.2s ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.05);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+#backspaceBtn {
+  background-color: #a25ff1;
+}
+
+#divisionBtn,
+#multiplicationBtn,
+#subtractionBtn,
+#additionBtn {
+  background-color: #e89f44;
+}
+
+#clearBtn {
+  background-color: #db5163;
+}
+
+#equalsBtn {
+  background-color: #4caf50;
+  grid-column: 4;
+  grid-row: 6 / 8;
+  height: 135px;
+}
+#zeroBtn,
+#oneBtn,
+#twoBtn,
+#threeBtn,
+#fourBtn,
+#fiveBtn,
+#sixBtn,
+#sevenBtn,
+#eightBtn,
+#nineBtn,
+#decimalBtn {
+  background-color: rgba(156, 148, 214, 0.644);
+}
+#zeroBtn {
+  grid-column: span 2;
+}
+button:active {
+  transform: scale(0.95);
+}
